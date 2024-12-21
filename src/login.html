@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Radian</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-black text-white area">
+    <!--Start Background Animation Body-->
+    <div class="">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!--End Background Animation Body-->
+
+    <!-- desktop navbar -->
+    <div
+      class="absolute top-24 bottom-24 flex justify-center items-center h-screen blur-2xl bg-white bg-opacity-10 w-full -z-10"
+    ></div>
+    <nav
+      class="hidden w-full h-20 bg-primary font-bold p-4 border-gray-600 bg-transparent"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">রেডিয়ান</a>
+        <ul class="flex justify-center items-center">
+          <li class="mx-2"><a href="#" class="hover:underline">হোম</a></li>
+          <li class="mx-2"><a href="#" class="hover:underline">এবাউট</a></li>
+          <li class="mx-2">
+            <a href="#" class="hover:underline">কোর্স সমূহ</a>
+          </li>
+          <li class="mx-2"><a href="#" class="hover:underline">যোগাযোগ</a></li>
+          <li class="mx-2">
+            <a href="registration.html">
+              <button
+                class="bg-secondary text-primary px-3 py-2 rounded-md hover:bg-red-500 hover:text-secondary transition ease-in-out delay-150 duration-300"
+              >
+                রেজিস্ট্রেশন
+              </button></a
+            >
+          </li>
+          <li class="mx-2">
+            <a href="login.html">
+              <button
+                class="bg-secondary text-primary px-3 py-2 rounded-md hover:bg-red-500 hover:text-secondary transition ease-in-out delay-150 duration-300"
+              >
+                লগইন
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- mobile navbar -->
+    <nav class="w-full bg-primary font-bold p-4 border-gray-600 bg-transparent">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">রেডিয়ান</a>
+        <ul class="flex justify-center items-center">
+          <li class="mx-2">
+            <button
+              class="bg-secondary text-primary px-3 py-2 rounded-md transition ease-in-out delay-150 duration-300"
+            >
+              <img
+                class="w-4"
+                src="./images/center-align-text-svgrepo-com.svg"
+                alt=""
+              />
+            </button>
+          </li>
+        </ul>
+        <ul class="hidden flex justify-center items-center">
+          <li class="mx-2"><a href="#" class="hover:underline">হোম</a></li>
+          <li class="mx-2"><a href="#" class="hover:underline">এবাউট</a></li>
+          <li class="mx-2">
+            <a href="#" class="hover:underline">কোর্স সমূহ</a>
+          </li>
+          <li class="mx-2"><a href="#" class="hover:underline">যোগাযোগ</a></li>
+          <li class="mx-2">
+            <button class="bg-secondary text-primary px-3 py-2 rounded-md">
+              রেজিস্ট্রেশন
+            </button>
+          </li>
+          <li class="mx-2">
+            <button class="bg-secondary text-primary px-3 py-2 rounded-md">
+              লগইন
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Start Login Form-->
+    <div class="lg:flex justify-center items-center h-screen">
+      <div>
+        <img class="lg:block bg-cover" src="./images/login-1.png" />
+      </div>
+      <div class="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+        <h2 class="text-2xl text-primary font-bold text-center">লগইন</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >ইমেইল</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block text-sm font-medium text-gray-700"
+              >পাসওয়ার্ড</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-primary focus:border-primary"
+            />
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="remember_me"
+                name="remember_me"
+                class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+              />
+              <label for="remember_me" class="ml-2 block text-sm text-gray-900"
+                >মনে রাখুন</label
+              >
+            </div>
+            <div class="text-sm">
+              <a href="#" class="font-medium text-primary hover:underline"
+                >পাসওয়ার্ড ভুলে গেছেন?</a
+              >
+            </div>
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-primary text-secondary font-bold px-3 py-2 rounded-md hover:bg-red-500 hover:text-secondary transition ease-in-out delay-150 duration-300"
+            >
+              লগইন
+            </button>
+          </div>
+        </form>
+        <p class="text-sm text-center text-gray-600">
+          একাউন্ট নেই?
+          <a
+            href="registration.html"
+            class="font-medium text-primary hover:underline"
+            >রেজিস্ট্রেশন করুন</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
