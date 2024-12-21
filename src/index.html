@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css stylesheet -->
+    <link rel="stylesheet" href="output.css" />
+    <title>Home | Radian</title>
+  </head>
+  <body class="bg-black text-white area">
+    <!--Start Background Animation Body-->
+    <div class="">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!--End Background Animation Body-->
+
+    <!-- desktop navbar -->
+    <div
+      class="absolute top-24 bottom-24 flex justify-center items-center h-screen blur-2xl bg-white bg-opacity-10 w-full -z-10"
+    ></div>
+    <nav
+      class="w-full h-20 bg-primary font-bold p-4 border-gray-600 bg-transparent"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">রেডিয়ান</a>
+        <ul class="flex justify-center items-center">
+          <li class="mx-2"><a href="#" class="hover:underline">হোম</a></li>
+          <li class="mx-2"><a href="#" class="hover:underline">এবাউট</a></li>
+          <li class="mx-2">
+            <a href="#" class="hover:underline">কোর্স সমূহ</a>
+          </li>
+          <li class="mx-2"><a href="#" class="hover:underline">যোগাযোগ</a></li>
+          <li class="mx-2">
+            <button
+              class="bg-secondary text-primary px-3 py-2 rounded-md hover:bg-red-500 hover:text-secondary transition ease-in-out delay-150 duration-300"
+            >
+              রেজিস্ট্রেশন
+            </button>
+          </li>
+          <li class="mx-2">
+            <button
+              class="bg-secondary text-primary px-3 py-2 rounded-md hover:bg-red-500 hover:text-secondary transition ease-in-out delay-150 duration-300"
+            >
+              লগইন
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- mobile navbar -->
+    <nav
+      class="hidden w-full bg-primary font-bold p-4 border-gray-600 bg-transparent"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">রেডিয়ান</a>
+        <ul class="flex justify-center items-center">
+          <li class="mx-2">
+            <button
+              class="bg-secondary text-primary px-3 py-2 rounded-md transition ease-in-out delay-150 duration-300"
+            >
+              <img
+                class="w-4"
+                src="/images/center-align-text-svgrepo-com.svg"
+                alt=""
+              />
+            </button>
+          </li>
+        </ul>
+        <ul class="hidden flex justify-center items-center">
+          <li class="mx-2"><a href="#" class="hover:underline">হোম</a></li>
+          <li class="mx-2"><a href="#" class="hover:underline">এবাউট</a></li>
+          <li class="mx-2">
+            <a href="#" class="hover:underline">কোর্স সমূহ</a>
+          </li>
+          <li class="mx-2"><a href="#" class="hover:underline">যোগাযোগ</a></li>
+          <li class="mx-2">
+            <button class="bg-secondary text-primary px-3 py-2 rounded-md">
+              রেজিস্ট্রেশন
+            </button>
+          </li>
+          <li class="mx-2">
+            <button class="bg-secondary text-primary px-3 py-2 rounded-md">
+              লগইন
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="my-20">
+      <div class="container mx-auto lg:flex justify-between items-center">
+        <div class="w-full lg:px-0 px-6">
+          <h1 class="text-5xl font-bold">
+            আপনার এক্সাম প্ল্যানিং এর জন্য
+            <span class="bg-red-500">রেডিয়ান</span>
+          </h1>
+          <p class="text-md mt-4 font-bold text-gray-500">
+            আমাদের কোর্স সমূহ অত্যন্ত যত্ন সহকারে তৈরি করা হয়েছে যাতে
+            শিক্ষার্থীরা সহজেই শিখতে পারে এবং তাদের একাডেমিক ও পেশাগত জীবনে সফল
+            হতে পারে। আমাদের অভিজ্ঞ শিক্ষকগণ সর্বদা শিক্ষার্থীদের পাশে থাকেন এবং
+            তাদের যেকোনো প্রশ্নের উত্তর দিতে প্রস্তুত। আমাদের সাথে যোগ দিন এবং
+            আপনার শিক্ষার যাত্রা শুরু করুন।
+          </p>
+          <button class="bg-secondary text-primary text-2xl font-bold">
+            এনরোল করুন
+          </button>
+        </div>
+        <div class="w-full">
+          <img class="w-full" src="/images/hero-2.png" alt="hero image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- course section -->
+    <div class="my-20">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-10">
+          আমাদের <span class="bg-red-500">কোর্স</span> সমূহ
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+          <div
+            class="bg-white backdrop-blur-2xl text-black p-4 shadow-lg rounded-sm"
+          >
+            <div class="bg-white text-black p-4 shadow-lg rounded-sm">
+              <img src="/images/ssc25.jpg" alt="" />
+              <h3 class="text-2xl font-bold mb-4">
+                <span class="bg-red-500 text-secondary">এস.এস.সি ২৫</span>
+                স্পেশাল
+              </h3>
+              <p class="text-gray-700 mb-4 font-bold text-xs">
+                এই কোর্সটি বিশেষভাবে এস.এস.সি ২০২৫ ব্যাচের শিক্ষার্থীদের জন্য
+                ডিজাইন করা হয়েছে। এখানে আপনি পাবেন সম্পূর্ণ সিলেবাস কভারেজ,
+                নিয়মিত মক টেস্ট, এবং অভিজ্ঞ শিক্ষকদের গাইডলাইন। আমাদের কোর্সটি
+                আপনাকে পরীক্ষার প্রস্তুতিতে সহায়তা করবে এবং আপনার একাডেমিক
+                সাফল্য নিশ্চিত করবে।
+              </p>
+              <button
+                class="bg-primary border-2 text-secondary px-4 py-1 text-md rounded-sm font-bold hover:bg-secondary hover:text-primary hover:border-2 hover:border-primary transition ease-in-out delay-150 duration-300"
+              >
+                আরও জানুন
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white backdrop-blur-2xl text-black p-4 shadow-lg rounded-sm"
+          >
+            <div class="bg-white text-black p-4 shadow-lg rounded-sm">
+              <img src="/images/ssc26.jpg" alt="" />
+              <h3 class="text-2xl font-bold mb-4">
+                <span class="bg-red-500 text-secondary">এস.এস.সি ২৬</span>
+                স্পেশাল
+              </h3>
+              <p class="text-gray-700 mb-4 font-bold text-xs">
+                এই কোর্সটি বিশেষভাবে এস.এস.সি ২০২৬ ব্যাচের শিক্ষার্থীদের জন্য
+                ডিজাইন করা হয়েছে। এখানে আপনি পাবেন সম্পূর্ণ সিলেবাস কভারেজ,
+                নিয়মিত মক টেস্ট, এবং অভিজ্ঞ শিক্ষকদের গাইডলাইন। আমাদের কোর্সটি
+                আপনাকে পরীক্ষার প্রস্তুতিতে সহায়তা করবে এবং আপনার একাডেমিক
+                সাফল্য নিশ্চিত করবে।
+              </p>
+              <button
+                class="bg-primary border-2 text-secondary px-4 py-1 text-md rounded-sm font-bold hover:bg-secondary hover:text-primary hover:border-2 hover:border-primary transition ease-in-out delay-150 duration-300"
+              >
+                আরও জানুন
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white backdrop-blur-2xl text-black p-4 shadow-lg rounded-sm"
+          >
+            <div class="bg-white text-black p-4 shadow-lg rounded-sm">
+              <img src="/images/hsc25.jpg" alt="" />
+              <h3 class="text-2xl font-bold mb-4">
+                <span class="bg-red-500 text-secondary">এইচ.এস.সি ২৫</span>
+                স্পেশাল
+              </h3>
+              <p class="text-gray-700 mb-4 font-bold text-xs">
+                এই কোর্সটি বিশেষভাবে এইচ.এস.সি ২০২৫ ব্যাচের শিক্ষার্থীদের জন্য
+                ডিজাইন করা হয়েছে। এখানে আপনি পাবেন সম্পূর্ণ সিলেবাস কভারেজ,
+                নিয়মিত মক টেস্ট, এবং অভিজ্ঞ শিক্ষকদের গাইডলাইন। আমাদের কোর্সটি
+                আপনাকে পরীক্ষার প্রস্তুতিতে সহায়তা করবে এবং আপনার একাডেমিক
+                সাফল্য নিশ্চিত করবে।
+              </p>
+              <button
+                class="bg-primary border-2 text-secondary px-4 py-1 text-md rounded-sm font-bold hover:bg-secondary hover:text-primary hover:border-2 hover:border-primary transition ease-in-out delay-150 duration-300"
+              >
+                আরও জানুন
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
